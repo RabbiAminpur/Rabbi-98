@@ -37,7 +37,7 @@ const SectionHeading = ({ children }: { children: React.ReactNode }) => (
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
-    className="text-2xl font-bold mb-6 text-slate-900 dark:text-white border-l-4 border-emerald-500 pl-4"
+    className="text-2xl font-bold mb-6 text-slate-950 border-l-4 border-emerald-600 pl-4"
   >
     {children}
   </motion.h2>
@@ -109,7 +109,7 @@ export default function App() {
       
       {/* --- Header --- */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-xl border-b border-slate-200 h-16 flex items-center justify-center px-6">
-        <h1 className="text-xl font-bold tracking-tight text-slate-900">
+        <h1 className="text-xl font-bold tracking-tight text-black">
           মীর রাব্বি হোসেন
         </h1>
       </header>
@@ -138,7 +138,7 @@ export default function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-3xl font-extrabold mb-4 leading-tight"
+            className="text-3xl font-extrabold mb-4 leading-tight text-black"
           >
             স্বাগতম মীর রাব্বি হোসেন এর পোর্টফলিওতে!
           </motion.h2>
@@ -147,7 +147,7 @@ export default function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-slate-600 max-w-md leading-relaxed"
+            className="text-slate-500 max-w-md leading-relaxed"
           >
             আমি একজন প্যাশনেট ওয়েব ডেভেলপার। আমি নতুন প্রযুক্তি শিখতে এবং তা দিয়ে সুন্দর ও কার্যকরী ডিজিটাল অভিজ্ঞতা তৈরি করতে ভালোবাসি।
           </motion.p>
@@ -162,8 +162,8 @@ export default function App() {
                 <h3 className="font-bold text-lg">সিনিয়র ওয়েব ডেভেলপার</h3>
                 <span className="text-xs bg-emerald-100 text-emerald-600 px-2 py-1 rounded-full">২০২২ - বর্তমান</span>
               </div>
-              <p className="text-sm text-slate-500 mb-4">টেক সলিউশনস লিমিটেড</p>
-              <ul className="text-sm space-y-2 text-slate-600 list-disc pl-4">
+              <p className="text-sm text-slate-400 mb-4">টেক সলিউশনস লিমিটেড</p>
+              <ul className="text-sm space-y-2 text-slate-500 list-disc pl-4">
                 <li>আধুনিক রিঅ্যাক্ট অ্যাপ্লিকেশন ডেভেলপমেন্ট এবং মেইনটেন্যান্স।</li>
                 <li>টিম লিড হিসেবে প্রজেক্ট ম্যানেজমেন্ট এবং কোড রিভিউ।</li>
                 <li>ইউজার ইন্টারফেস অপ্টিমাইজেশন এবং পারফরম্যান্স ইমপ্রুভমেন্ট।</li>
@@ -175,7 +175,7 @@ export default function App() {
                 <span className="text-xs bg-slate-100 text-slate-500 px-2 py-1 rounded-full">২০২০ - ২০২২</span>
               </div>
               <p className="text-sm text-slate-500 mb-4">সফটওয়্যার হাব</p>
-              <p className="text-sm text-slate-600">
+              <p className="text-sm text-slate-500">
                 ফ্রন্টএন্ড ডেভেলপমেন্ট এবং এপিআই ইন্টিগ্রেশনে কাজ করেছি। বিভিন্ন ক্লায়েন্ট প্রজেক্টে এইচটিএমএল, সিএসএস এবং জাভাস্ক্রিপ্ট ব্যবহার করে রেসপন্সিভ ডিজাইন তৈরি করেছি।
               </p>
             </Card>
@@ -244,7 +244,7 @@ export default function App() {
         <section id="about" className="scroll-mt-24">
           <SectionHeading>আমার সম্পর্কে</SectionHeading>
           <Card>
-            <p className="text-slate-600 leading-relaxed">
+            <p className="text-slate-500 leading-relaxed">
               আমি মীর রাব্বি হোসেন, একজন প্রযুক্তি প্রেমী মানুষ। ছোটবেলা থেকেই কম্পিউটারের প্রতি আমার অন্যরকম আকর্ষণ ছিল। সেই আকর্ষণ থেকেই আজ আমি একজন ওয়েব ডেভেলপার। আমি বিশ্বাস করি, প্রযুক্তি মানুষের জীবনকে সহজ করতে পারে এবং আমি সেই লক্ষ্যেই কাজ করে যাচ্ছি। কাজের বাইরে আমি বই পড়তে এবং ভ্রমণ করতে পছন্দ করি।
             </p>
             <div className="mt-6 flex gap-4">
@@ -304,7 +304,7 @@ export default function App() {
                 href={`#${item.id}`}
                 className={cn(
                   "flex flex-col items-center gap-1 px-3 py-1 rounded-xl transition-all relative",
-                  isActive ? "text-emerald-700" : "text-slate-800 hover:text-black"
+                  isActive ? "text-emerald-800" : "text-slate-950 hover:text-black"
                 )}
               >
                 {isActive && (

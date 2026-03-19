@@ -3,19 +3,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
 
 @theme {
-  --font-sans: "Hind Siliguri";
+  --font-sans: "Hind Siliguri", sans-serif;
 }
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
+  --background: #ffffff;
+  --foreground: #020617;
+}
+
+* {
+  font-family: "Hind Siliguri", sans-serif !important;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Hind Siliguri";
+  font-family: "Hind Siliguri", sans-serif;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Scroll padding for fixed header */
