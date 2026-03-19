@@ -37,7 +37,7 @@ const SectionHeading = ({ children }: { children: React.ReactNode }) => (
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
-    className="text-2xl font-bold mb-6 text-slate-950 border-l-4 border-emerald-600 pl-4"
+    className="text-2xl font-bold mb-6 text-slate-900 border-l-4 border-indigo-600 pl-4"
   >
     {children}
   </motion.h2>
@@ -56,7 +56,7 @@ const Card = ({ children, className }: CardProps) => (
     viewport={{ once: true }}
     whileHover={{ y: -5 }}
     className={cn(
-      "bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-md border border-slate-100 dark:border-slate-800 transition-all",
+      "bg-white p-6 rounded-2xl shadow-md border border-slate-100 transition-all",
       className
     )}
   >
@@ -125,7 +125,7 @@ export default function App() {
             transition={{ duration: 0.5 }}
             className="relative mb-8"
           >
-            <div className="absolute inset-0 bg-emerald-500 blur-2xl opacity-20 rounded-full" />
+            <div className="absolute inset-0 bg-indigo-500 blur-2xl opacity-20 rounded-full" />
             <img 
               src="https://i.ibb.co/HTdwrmF9/20260320-034028.png" 
               alt="প্রোফাইল ইমেজ" 
@@ -147,7 +147,7 @@ export default function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-slate-500 max-w-md leading-relaxed"
+            className="text-slate-600 max-w-md leading-relaxed"
           >
             আমি একজন প্যাশনেট ওয়েব ডেভেলপার। আমি নতুন প্রযুক্তি শিখতে এবং তা দিয়ে সুন্দর ও কার্যকরী ডিজিটাল অভিজ্ঞতা তৈরি করতে ভালোবাসি।
           </motion.p>
@@ -160,10 +160,10 @@ export default function App() {
             <Card>
               <div className="flex justify-between items-start mb-2">
                 <h3 className="font-bold text-lg">সিনিয়র ওয়েব ডেভেলপার</h3>
-                <span className="text-xs bg-emerald-100 text-emerald-600 px-2 py-1 rounded-full">২০২২ - বর্তমান</span>
+                <span className="text-xs bg-indigo-100 text-indigo-600 px-2 py-1 rounded-full">২০২২ - বর্তমান</span>
               </div>
-              <p className="text-sm text-slate-400 mb-4">টেক সলিউশনস লিমিটেড</p>
-              <ul className="text-sm space-y-2 text-slate-500 list-disc pl-4">
+              <p className="text-sm text-slate-500 mb-4">টেক সলিউশনস লিমিটেড</p>
+              <ul className="text-sm space-y-2 text-slate-600 list-disc pl-4">
                 <li>আধুনিক রিঅ্যাক্ট অ্যাপ্লিকেশন ডেভেলপমেন্ট এবং মেইনটেন্যান্স।</li>
                 <li>টিম লিড হিসেবে প্রজেক্ট ম্যানেজমেন্ট এবং কোড রিভিউ।</li>
                 <li>ইউজার ইন্টারফেস অপ্টিমাইজেশন এবং পারফরম্যান্স ইমপ্রুভমেন্ট।</li>
@@ -175,7 +175,7 @@ export default function App() {
                 <span className="text-xs bg-slate-100 text-slate-500 px-2 py-1 rounded-full">২০২০ - ২০২২</span>
               </div>
               <p className="text-sm text-slate-500 mb-4">সফটওয়্যার হাব</p>
-              <p className="text-sm text-slate-500">
+              <p className="text-sm text-slate-600">
                 ফ্রন্টএন্ড ডেভেলপমেন্ট এবং এপিআই ইন্টিগ্রেশনে কাজ করেছি। বিভিন্ন ক্লায়েন্ট প্রজেক্টে এইচটিএমএল, সিএসএস এবং জাভাস্ক্রিপ্ট ব্যবহার করে রেসপন্সিভ ডিজাইন তৈরি করেছি।
               </p>
             </Card>
@@ -192,8 +192,8 @@ export default function App() {
               </div>
               <div>
                 <h3 className="font-bold">কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং (B.Sc)</h3>
-                <p className="text-sm text-slate-500">ঢাকা বিশ্ববিদ্যালয়</p>
-                <p className="text-xs text-slate-400 mt-1">২০১৬ - ২০২০</p>
+                <p className="text-sm text-slate-600">ঢাকা বিশ্ববিদ্যালয়</p>
+                <p className="text-xs text-slate-500 mt-1">২০১৬ - ২০২০</p>
               </div>
             </Card>
             <Card className="flex items-start gap-4">
@@ -202,8 +202,8 @@ export default function App() {
               </div>
               <div>
                 <h3 className="font-bold">উচ্চ মাধ্যমিক (HSC)</h3>
-                <p className="text-sm text-slate-500">নটর ডেম কলেজ, ঢাকা</p>
-                <p className="text-xs text-slate-400 mt-1">২০১৪ - ২০১৬</p>
+                <p className="text-sm text-slate-600">নটর ডেম কলেজ, ঢাকা</p>
+                <p className="text-xs text-slate-500 mt-1">২০১৪ - ২০১৬</p>
               </div>
             </Card>
           </div>
@@ -224,7 +224,7 @@ export default function App() {
               <Card key={index} className="p-4">
                 <div className="flex justify-between items-center mb-2">
                   <span className="font-medium text-sm">{skill.name}</span>
-                  <span className="text-xs text-emerald-500 font-bold">{skill.level}</span>
+                  <span className="text-xs text-indigo-600 font-bold">{skill.level}</span>
                 </div>
                 <div className="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
                   <motion.div 
@@ -232,7 +232,7 @@ export default function App() {
                     whileInView={{ width: skill.level.replace('%', '') + '%' }}
                     viewport={{ once: true }}
                     transition={{ duration: 1, delay: index * 0.1 }}
-                    className="bg-emerald-500 h-full rounded-full"
+                    className="bg-indigo-600 h-full rounded-full"
                   />
                 </div>
               </Card>
@@ -244,13 +244,13 @@ export default function App() {
         <section id="about" className="scroll-mt-24">
           <SectionHeading>আমার সম্পর্কে</SectionHeading>
           <Card>
-            <p className="text-slate-500 leading-relaxed">
+            <p className="text-slate-600 leading-relaxed">
               আমি মীর রাব্বি হোসেন, একজন প্রযুক্তি প্রেমী মানুষ। ছোটবেলা থেকেই কম্পিউটারের প্রতি আমার অন্যরকম আকর্ষণ ছিল। সেই আকর্ষণ থেকেই আজ আমি একজন ওয়েব ডেভেলপার। আমি বিশ্বাস করি, প্রযুক্তি মানুষের জীবনকে সহজ করতে পারে এবং আমি সেই লক্ষ্যেই কাজ করে যাচ্ছি। কাজের বাইরে আমি বই পড়তে এবং ভ্রমণ করতে পছন্দ করি।
             </p>
             <div className="mt-6 flex gap-4">
-              <a href="#" className="p-2 bg-slate-100 rounded-lg hover:text-emerald-500 transition-colors"><Github size={20} /></a>
-              <a href="#" className="p-2 bg-slate-100 rounded-lg hover:text-emerald-500 transition-colors"><Linkedin size={20} /></a>
-              <a href="#" className="p-2 bg-slate-100 rounded-lg hover:text-emerald-500 transition-colors"><Twitter size={20} /></a>
+              <a href="#" className="p-2 bg-slate-100 rounded-lg hover:text-indigo-600 transition-colors"><Github size={20} /></a>
+              <a href="#" className="p-2 bg-slate-100 rounded-lg hover:text-indigo-600 transition-colors"><Linkedin size={20} /></a>
+              <a href="#" className="p-2 bg-slate-100 rounded-lg hover:text-indigo-600 transition-colors"><Twitter size={20} /></a>
             </div>
           </Card>
         </section>
@@ -260,29 +260,29 @@ export default function App() {
           <SectionHeading>যোগাযোগ</SectionHeading>
           <div className="space-y-4">
             <Card className="flex items-center gap-4">
-              <div className="p-3 bg-emerald-100 text-emerald-600 rounded-xl">
+              <div className="p-3 bg-indigo-100 text-indigo-600 rounded-xl">
                 <Mail size={20} />
               </div>
               <div>
-                <p className="text-xs text-slate-400">ইমেইল</p>
+                <p className="text-xs text-slate-500">ইমেইল</p>
                 <p className="font-medium">Mrhrabby24@gmail.com</p>
               </div>
             </Card>
             <Card className="flex items-center gap-4">
-              <div className="p-3 bg-orange-100 text-orange-600 rounded-xl">
+              <div className="p-3 bg-indigo-100 text-indigo-600 rounded-xl">
                 <Phone size={20} />
               </div>
               <div>
-                <p className="text-xs text-slate-400">ফোন</p>
+                <p className="text-xs text-slate-500">ফোন</p>
                 <p className="font-medium">+৮৮০ ১২৩৪৫৬৭৮৯০</p>
               </div>
             </Card>
             <Card className="flex items-center gap-4">
-              <div className="p-3 bg-red-100 text-red-600 rounded-xl">
+              <div className="p-3 bg-indigo-100 text-indigo-600 rounded-xl">
                 <MapPin size={20} />
               </div>
               <div>
-                <p className="text-xs text-slate-400">ঠিকানা</p>
+                <p className="text-xs text-slate-500">ঠিকানা</p>
                 <p className="font-medium">ঢাকা, বাংলাদেশ</p>
               </div>
             </Card>
@@ -304,13 +304,13 @@ export default function App() {
                 href={`#${item.id}`}
                 className={cn(
                   "flex flex-col items-center gap-1 px-3 py-1 rounded-xl transition-all relative",
-                  isActive ? "text-emerald-800" : "text-slate-950 hover:text-black"
+                  isActive ? "text-indigo-600" : "text-slate-600 hover:text-slate-900"
                 )}
               >
                 {isActive && (
                   <motion.div 
                     layoutId="nav-bg"
-                    className="absolute inset-0 bg-emerald-50 rounded-xl -z-10"
+                    className="absolute inset-0 bg-indigo-50 rounded-xl -z-10"
                     transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
                   />
                 )}
@@ -324,7 +324,7 @@ export default function App() {
 
       {/* Scroll Progress Bar */}
       <motion.div 
-        className="fixed top-0 left-0 right-0 h-1 bg-emerald-500 z-[60] origin-left"
+        className="fixed top-0 left-0 right-0 h-1 bg-indigo-600 z-[60] origin-left"
         style={{ scaleX: useScrollProgress() }}
       />
     </div>
