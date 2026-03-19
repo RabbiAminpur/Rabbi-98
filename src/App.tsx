@@ -304,7 +304,7 @@ export default function App() {
                 href={`#${item.id}`}
                 className={cn(
                   "flex flex-col items-center gap-1 px-3 py-1 rounded-xl transition-all relative",
-                  isActive ? "text-emerald-500" : "text-slate-400 hover:text-slate-600"
+                  isActive ? "text-emerald-700" : "text-slate-800 hover:text-black"
                 )}
               >
                 {isActive && (

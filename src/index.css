@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
 
 @theme {
-  --font-sans: "SolaimanLipi", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Hind Siliguri";
 }
 
 :root {
@@ -14,7 +14,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-sans);
+  font-family: "Hind Siliguri";
   scroll-behavior: smooth;
 }
 
